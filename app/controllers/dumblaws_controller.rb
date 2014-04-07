@@ -1,0 +1,2 @@
+class DumblawsController < ApplicationController
+end
