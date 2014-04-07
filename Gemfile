@@ -33,6 +33,8 @@ group :doc do
 end
 
 gem 'devise'
+gem 'hirb'
+gem 'thumbs_up'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
