@@ -1,21 +1,18 @@
 # -*- encoding: utf-8 -*-
-# stub: turbolinks 2.2.2 ruby lib
 
 Gem::Specification.new do |s|
   s.name = "turbolinks"
   s.version = "2.2.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.require_paths = ["lib"]
   s.authors = ["David Heinemeier Hansson"]
   s.date = "2014-04-06"
   s.email = "david@loudthinking.com"
   s.homepage = "https://github.com/rails/turbolinks/"
   s.licenses = ["MIT"]
-  s.rubygems_version = "2.2.2"
+  s.require_paths = ["lib"]
+  s.rubygems_version = "2.0.14"
   s.summary = "Turbolinks makes following links in your web application faster (use with Rails Asset Pipeline)"
-
-  s.installed_by_version = "2.2.2" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
