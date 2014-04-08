@@ -1,8 +1,8 @@
-<h1>Dumblaws#index</h1>
+<h1>Dumblaws</h1>
 <p>Find me in app/views/home/index.html.erb</p>
 <% @all_laws.each do |x| %>
 	<h2><%= x.title %></h2>
 	<%= x.description %><br />
-	<%= x.source %>
+	<%= link_to "source", x.source %>
 
 <% end %>
