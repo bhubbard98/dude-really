@@ -1,4 +1,6 @@
 class DumblawsController < ApplicationController
+	before_action :authenticate_user!
+	
 	def new
 	 @dumblaws = Dumblaw.new
 	end
