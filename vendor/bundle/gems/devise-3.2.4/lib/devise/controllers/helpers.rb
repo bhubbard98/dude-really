@@ -106,7 +106,7 @@ module Devise
         if respond_to?(home_path, true)
           send(home_path)
         elsif respond_to?(:root_path)
-          root_path
+          dumblaws_path
         else
           "/"
         end
