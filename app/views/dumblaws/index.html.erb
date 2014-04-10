@@ -11,8 +11,8 @@
 				<%= link_to "See The Law", x.source %> <br />
 				<%= link_to("Dude, Really?", vote_up_dumblaw_path(x), :method => :post, remote: true) %><br />
 				<span class="votes_for"><%= x.votes_for %></span><br />
-				<%= x.votes_against %>
-				<%= link_to("It's not so dumb", vote_down_dumblaw_path(x) , :method => :post, remote: true) %>
+				<%= link_to("It's not so dumb", vote_down_dumblaw_path(x), :method => :post, remote: true) %>
+				<span class="votes_against"><%= x.votes_against %></span><br />
 			</div>	
 		<% end %>
 	</div>

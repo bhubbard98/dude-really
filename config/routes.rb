@@ -4,6 +4,9 @@ DudeReally::Application.routes.draw do
   resources :dumblaws do
   	member do
   		post :vote_up
+  		post :vote_down
   	end
-  end		
+  end
+  
+
 end

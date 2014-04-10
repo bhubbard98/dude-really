@@ -20,4 +20,19 @@ class DumblawsController < ApplicationController
 	 	render :nothing => true, :status => 404
 	 end		
 	end
+	
+	def vote_down
+	 begin
+	 	puts "here"	 	
+	 	current_user.vote_against(@dumblaws = Dumblaw.find(params[:id]))
+	 	puts @dumblaws
+	 	respond_to do |format|
+	 		format.html{ render :nothing => true, :status => 200	}
+	 		format.js {}
+	 	end
+	 rescue ActiveRecord::RecordInvalid
+	 	render :nothing => true, :status => 404
+	 end		
+	end
+
 end
