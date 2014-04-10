@@ -5,11 +5,14 @@
 	</div>	 -->
 	<div class="row">	
 		<% @all_laws.each do |x| %>
-			<div class="small-3 columns left">
+			<div class="small-3 columns left" id="dumblaw<%= x.id%>">
 				<h3><%= x.title %></h3>
 				<%= x.description %><br />
 				<%= link_to "See The Law", x.source %> <br />
-				<%= link_to('vote for this law!', vote_up_dumblaws_path(x), :method => :post) %>
+				<%= link_to("Dude, Really?", vote_up_dumblaw_path(x), :method => :post, remote: true) %><br />
+				<span class="votes_for"><%= x.votes_for %></span><br />
+				<%= x.votes_against %>
+				<%= link_to("It's not so dumb", vote_down_dumblaw_path(x) , :method => :post, remote: true) %>
 			</div>	
 		<% end %>
 	</div>

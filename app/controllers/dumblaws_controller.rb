@@ -12,7 +12,10 @@ class DumblawsController < ApplicationController
 	def vote_up
 	 begin
 	 	current_user.vote_for(@dumblaws = Dumblaw.find(params[:id]))
-	 	render :nothing => true, :status => 200	
+	 	respond_to do |format|
+	 		format.html{ render :nothing => true, :status => 200	}
+	 		format.js {}
+	 	end
 	 rescue ActiveRecord::RecordInvalid
 	 	render :nothing => true, :status => 404
 	 end		
