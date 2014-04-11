@@ -10,6 +10,9 @@
     <ul class="right">
       <% if user_signed_in? %>
         <li>
+          <%= link_to 'Dumblaws', dumblaws_path %>
+        </li>
+        <li>
           <%= link_to 'Edit Profile', edit_user_registration_path %>
         </li>
         <li>
