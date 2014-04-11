@@ -8,13 +8,8 @@ class DumblawsController < ApplicationController
 	def create
 	 @dumblaws = Dumblaw.new(dumblaw_params)
 	 @dumblaws.save
-	 redirect_to @dumblaws_path
+	 redirect_to dumblaws_path
 	end
-
-	# private
-	# def dumblaw_params
-	# 	params.require(:dumblaws).permit(:title, :description, :source)
-	# end
 
 	def index
 	 @all_laws = Dumblaw.all	
@@ -43,5 +38,9 @@ class DumblawsController < ApplicationController
 	 	render :nothing => true, :status => 404
 	 end		
 	end
-
+ 	
+ 	private
+	def dumblaw_params
+		params.require(:dumblaw).permit(:title, :description, :source)
+	end
 end
