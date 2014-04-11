@@ -5,6 +5,17 @@ class DumblawsController < ApplicationController
 	 @dumblaws = Dumblaw.new
 	end
 
+	def create
+	 @dumblaws = Dumblaw.new(dumblaw_params)
+	 @dumblaws.save
+	 redirect_to @dumblaws_path
+	end
+
+	# private
+	# def dumblaw_params
+	# 	params.require(:dumblaws).permit(:title, :description, :source)
+	# end
+
 	def index
 	 @all_laws = Dumblaw.all	
 	end
@@ -22,10 +33,8 @@ class DumblawsController < ApplicationController
 	end
 	
 	def vote_down
-	 begin
-	 	puts "here"	 	
+	 begin	
 	 	current_user.vote_against(@dumblaws = Dumblaw.find(params[:id]))
-	 	puts @dumblaws
 	 	respond_to do |format|
 	 		format.html{ render :nothing => true, :status => 200	}
 	 		format.js {}
