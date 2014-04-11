@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-
+# Dumblaw.all.destroy_all
 # Dumblaw.all.each do |d|
 # 	puts "Dumblaw.create( user_id: '#{d.user_id}', title: '#{d.title}', description: '#{d.description}', source: '#{d.source}')"
 # end
