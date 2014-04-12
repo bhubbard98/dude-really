@@ -7,7 +7,7 @@
 		<% @all_laws.each do |x| %>
 			<div class="medium-4 columns left" id="dumblaw<%= x.id%>">
 				<h3><%= x.title %></h3>
-				<%= x.description %><br />
+				<%= x.description %><br /><br />
 				<%= link_to "See The Law", x.source %><br />
 				<%= link_to("Dude, Really?", vote_up_dumblaw_path(x), :method => :post, remote: true) %>
 				<span class="votes_for"><%= x.votes_for %></span><br />

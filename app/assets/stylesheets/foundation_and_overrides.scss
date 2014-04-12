@@ -126,8 +126,6 @@ $header-font-color: #ffffff;
 $header-top-margin: 2.5rem;
 // $header-bottom-margin: .5rem;
 // $header-text-rendering: optimizeLegibility;
-
-
 // We use these to control header font sizes
 $h1-font-size: rem-calc(60);
 // $h2-font-size: rem-calc(37);
@@ -165,7 +163,8 @@ $paragraph-font-weight: normal;
 
 // We use these to style anchors
 // $anchor-text-decoration: none;
-// $anchor-font-color: $primary-color;
+$anchor-font-color: #30DCEB;
+// $anchor-line-height: 1.5px;
 // $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
 
 // We use these to style the <hr> element
@@ -202,7 +201,7 @@ $hr-border-style: solid;
 // We use these to control the border styles
 // $microformat-border-width: 1px;
 // $microformat-border-style: solid;
-// $microformat-border-color: #ddd;
+// $microformat-border-color: #30E3EB;
 
 // We use these to control full name font styles
 // $microformat-fullname-font-weight: bold;
