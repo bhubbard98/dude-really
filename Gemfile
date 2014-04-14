@@ -44,6 +44,11 @@ gem 'devise'
 gem 'hirb'
 gem 'thumbs_up'
 gem 'foundation-rails'
+
+group :production do
+	gem 'rails_12factor'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
