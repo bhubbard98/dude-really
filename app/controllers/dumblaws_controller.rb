@@ -8,8 +8,13 @@ class DumblawsController < ApplicationController
 
 	def create
 	 @dumblaw = Dumblaw.new(dumblaw_params)
-	 @dumblaw.save
-	 redirect_to dumblaws_path
+	 if @dumblaw.save 
+	 	flash[:notice] = "Woot Woot! You Saved A Dumblaw!"
+	 	redirect_to dumblaws_path
+	 else
+	 	flash[:error] = "Something went wrong. C'mon Player!"
+	 	redirect_to new_dumblaw_path
+	 end	 
 	end
 
 	def index
