@@ -52,7 +52,7 @@
 # Dumblaw.create( user_id: '40', title: 'Wisconsin', description: "Gotta have real butter.", source: "http://docs.legis.wisconsin.gov/statutes/statutes/97/18/4")
 # Dumblaw.create( user_id: '41', title: 'Wyoming', description: "Cannot shoot fish with a gun.", source: "http://legisweb.state.wy.us/statutes/statutes.aspx?file=titles/Title23/T23CH3AR2.htm")
 
-Gov.create( user_id: '1', state: 'Alabama', name: 'Robert Bentley', email: 'governorrobertbentley@governor.state.al.us')
+Gov.create( state: 'Alabama', name: 'Robert Bentley', email: 'governorrobertbentley@governor.state.al.us')
 Gov.create( user_id: '2', state: 'Alaska', name: 'Sean Parnell', email: 'governor@gov.state.ak.us')
 Gov.create( user_id: '3', state: 'Arizona', name: 'Janice Brewer', email: 'azgov@azgov.com')
 Gov.create(	user_id: '4', state: 'Arkansas', name: 'Mike Beebe', email: 'info@governor.arkansas.gov')

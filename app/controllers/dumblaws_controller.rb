@@ -51,6 +51,7 @@ class DumblawsController < ApplicationController
 	 	render :nothing => true, :status => 404
 	 end		
 	end
+
  	
  	private
 	def dumblaw_params

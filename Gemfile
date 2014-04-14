@@ -44,6 +44,7 @@ gem 'devise'
 gem 'hirb'
 gem 'thumbs_up'
 gem 'foundation-rails'
+gem 'figaro'
 
 group :production do
 	gem 'rails_12factor'
