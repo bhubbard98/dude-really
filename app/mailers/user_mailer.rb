@@ -8,7 +8,6 @@ class UserMailer < ActionMailer::Base
   
   def threshold_mail(email)
   	@email = email
-  	@gov = 'http://dumb-law.herokuapp.com/' 
   	mail(to: @email.email, subject: 'There is a dumblaw on the books that should be reexamined.')
   end
 end
