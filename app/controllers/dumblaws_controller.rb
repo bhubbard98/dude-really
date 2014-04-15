@@ -25,14 +25,14 @@ class DumblawsController < ApplicationController
 	def vote_up
 	 begin
 	 	current_user.vote_for(@dumblaw = Dumblaw.find(params[:id]))
-	 	if @dumblaw.votes.count = @vote_threshold
-	 		states = YAML.load_file('states.yml')
-	 		governor = states[@dumblaw.title['governor']]
-	 		email = states[@dumblaw.title['email']]
-	 		#some code to email
-	 	end
+	 	# if @dumblaw.votes.count = @vote_threshold
+	 	# 	states = YAML.load_file('states.yml')
+	 	# 	governor = states[@dumblaw.title['governor']]
+	 	# 	email = states[@dumblaw.title['email']]
+	 	# 	#some code to email
+	 	# end
 	 	respond_to do |format|
-	 		format.html{ render :nothing => true, :status => 200	}
+	 		render :partial => "votecount"
 	 		format.js {}	
 	 	end
 	 rescue ActiveRecord::RecordInvalid

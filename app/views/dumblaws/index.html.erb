@@ -1,20 +1,16 @@
-<!-- <div class="row">
-	<div class="small-9 small-centered large-uncentered columns">
-		<h1>Dumblaws</h1>
-		<p>Find me in app/views/home/index.html.erb</p>
-	</div>	 -->
+
 	<div class="row">	
 		<% @all_laws.each do |x| %>
 			<div class="medium-4 columns left" id="dumblaw<%= x.id%>">
 				<h3><%= x.title %></h3>
 				<%= x.description %><br /><br />
 				<%= link_to "See The Law", x.source %><br />
-				<%= link_to("Dude, Really?", vote_up_dumblaw_path(x), :method => :post, remote: true) %>
+				<%= link_to("Dude, Really?", vote_up_dumblaw_path(x), :remote => :true,:method => :post, :class => :rateup ) %>
 				<span class="votes_for"><%= x.votes_for %></span><br />
-				<%= link_to("It's not so dumb", vote_down_dumblaw_path(x), :method => :post, remote: true) %>
+				<%= link_to("It's not so dumb", vote_down_dumblaw_path(x), :remote => :true, :method => :post, :class => :ratedown ) %>
 				<span class="votes_against"><%= x.votes_against %></span><br />
 			</div>	
 		<% end %>
 	</div>
-<!-- </div> -->
+
 				
