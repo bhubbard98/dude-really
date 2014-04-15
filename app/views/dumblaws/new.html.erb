@@ -1,11 +1,11 @@
 <div class="row">
 	<div class="large-6 columns small-centered">
 		<%= form_for(@dumblaw) do |f| %>
-			<%= f.label :title %>
+			<%= f.label :title, 'Name of State' %>
 			<%= f.text_field :title %><br />
-			<%= f.label	:description %>
+			<%= f.label	:description, 'Description (140 character limit)' %>
 			<%= f.text_field :description %><br />
-			<%= f.label :source %>
+			<%= f.label :source, 'Link of Law' %>
 			<%= f.text_field :source %><br />
 			<%= submit_tag("submit") %>
 		<% end %>
