@@ -32,7 +32,7 @@ class DumblawsController < ApplicationController
 	 	# 	#some code to email
 	 	# end
 	 	respond_to do |format|
-	 		render :partial => "votecount"
+	 		format.html{ render :nothing => true, :status => 200	}
 	 		format.js {}	
 	 	end
 	 rescue ActiveRecord::RecordInvalid
