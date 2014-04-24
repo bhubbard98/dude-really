@@ -2,9 +2,7 @@
 // # All this logic will automatically be available in application.js.
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 
-$('#theLaws').ready(function(){
-	// alert("HEY");
-})
+
 // Array of 5 different laws
 var laws = ['dumblaw1','dumblaw10', 'dumblaw12', 'dumblaw36', 'dumblaw41']
 
@@ -13,10 +11,9 @@ var laws = ['dumblaw1','dumblaw10', 'dumblaw12', 'dumblaw36', 'dumblaw41']
 var dumbLaw = function (){
 	var random_law = Math.floor(Math.random() * 5);
     console.log(random_law);
-	$("#theLaws").text(laws[random_law]);
+	$("#theLaws").append(laws[random_law]);
 }
 
-$(body).ready(function() {
-    setInterval(dumbLaw, 15000);
-
+$(document).ready(function() {
+    setInterval(dumbLaw, 3000);
 });
