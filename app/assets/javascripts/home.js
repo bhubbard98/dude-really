@@ -4,14 +4,14 @@
 
 
 // Array of 5 different laws
-var laws = ['dumblaw1','dumblaw10', 'dumblaw12', 'dumblaw36', 'dumblaw41']
+var laws = ['Unlawful bear exploitation is a Class B felony and is punishable as provided by law','A referral is needed to get medical care for kleptomania.', 'Fake wrestling is prohibited.', 'It is illegal to cause a catastrophe.', 'Cannot shoot fish with a gun.']
 
 // When called, generate a random number between 0 and 4
 // Use that number to access the index of the laws array
 var dumbLaw = function (){
 	var random_law = Math.floor(Math.random() * 5);
     console.log(random_law);
-	$("#theLaws").append(laws[random_law]);
+	$("#theLaws").text(laws[random_law]);
 }
 
 $(document).ready(function() {
