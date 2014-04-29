@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  def index
-  	# gon.theLaws =  
-  end
+  # def index
+  # 	# gon.theLaws =  
+  # end
 end
