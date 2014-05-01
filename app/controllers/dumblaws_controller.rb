@@ -29,7 +29,7 @@ class DumblawsController < ApplicationController
 	 	# 	states = YAML.load_file('states.yml')
 	 	# 	governor = states[@dumblaw.title['governor']]
 	 	# 	email = states[@dumblaw.title['email']]
-	 	# 	#some code to email
+	 	# 	some code to email
 	 	# end
 	 	respond_to do |format|
 	 		format.html{ render :nothing => true, :status => 200	}
