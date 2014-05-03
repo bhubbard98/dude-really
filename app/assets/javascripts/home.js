@@ -11,9 +11,9 @@ var laws = ['Unlawful bear exploitation is a Class B felony and is punishable as
 var dumbLaw = function (){
 	var random_law = Math.floor(Math.random() * 5);
     console.log(random_law);
-	$("#theLaws").text(laws[random_law]);
+	$("#exLaws").text(laws[random_law]);
 };
 
 $(document).ready(function() {
-    setInterval(dumbLaw, 3000);
+    setInterval(dumbLaw, 2000);
 });
