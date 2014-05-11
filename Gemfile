@@ -45,7 +45,7 @@ gem 'hirb'
 gem 'thumbs_up'
 gem 'foundation-rails'
 gem 'figaro'
-
+gem 'execjs'
 
 group :production do
 	gem 'rails_12factor'

@@ -197,6 +197,7 @@ DEPENDENCIES
   binding_of_caller
   coffee-rails (~> 4.0.0)
   devise
+  execjs
   figaro
   foundation-rails
   hirb
